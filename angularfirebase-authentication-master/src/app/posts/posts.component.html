@@ -1,0 +1,9 @@
+<div *ngif="items?.length >.0; else noItems">
+<ul *ngFor="let item of items" >
+<li >{{item.title}}</li>
+</ul>
+</div>
+<ng-template #noItems>
+<hr>
+<h5>There are no items to list</h5>
+</<ng-template>
